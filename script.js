@@ -12,6 +12,9 @@ const lower = confirm('Do you want lowercase?')
 const spChar = confirm('Do you want special characters?')
 const numbers = confirm('Do you want numbers?')
 
+function generatePassword () {
+  console.log ("CLICK ACCEPTED!")
+}
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
