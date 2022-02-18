@@ -1,6 +1,7 @@
 // Assignment code here
 //define variables
 const aplha = 'abcdefghijklmnopqrstuvwxyz';
+const upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 const num = '1234567890';
 const special = '!@#$%^&*?~_-'
 let len = 0;
@@ -39,7 +40,7 @@ if (!caps && !lower && !spChar && !numbers) {
 
 //4 true values
 } else if (caps && lower && spChar && numbers)
-userSelections = caps.concat(lower, spChar, numbers);
+userSelections = aplha.concat(upper, num, special);
 console.log(userSelections)
 
 
