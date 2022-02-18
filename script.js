@@ -39,13 +39,69 @@ if (!caps && !lower && !spChar && !numbers) {
   userSelections = alert ("You must select at least one option!");
 
 //4 true values
-} else if (caps && lower && spChar && numbers)
+} else if (caps && lower && spChar && numbers) {
 userSelections = aplha.concat(upper, num, special);
-console.log(userSelections)
-
-
-
-
+console.log(userSelections);
+}
+//3 true values
+else if (caps && lower && spChar) {
+  userSelections = aplha.concat(upper, special);
+  console.log(userSelections);
+} 
+else if (caps && lower && numbers) {
+  userSelections = aplha.concat(upper, num);
+  console.log(userSelections);
+}
+else if (caps && spChar && numbers) {
+  userSelections = upper.concat(num, special);
+  console.log(userSelections);
+}
+else if (lower && spChar && numbers) {
+  userSelections = aplha.concat(num, special);
+  console.log(userSelections);
+}
+//2 true values
+else if (lower && spChar) {
+  userSelections = aplha.concat(special);
+  console.log(userSelections);
+}
+else if (lower && num) {
+  userSelections = aplha.concat(num);
+  console.log(userSelections);
+}
+else if (lower && caps) {
+  userSelections = aplha.concat(upper);
+  console.log(userSelections);
+}
+else if (upper && spChar) {
+  userSelections = caps.concat(special);
+  console.log(userSelections);
+}
+else if (upper && numbers) {
+  userSelections = caps.concat(num);
+  console.log(userSelections);
+}
+else if (numbers && spChar) {
+  userSelections = num.concat(special);
+  console.log(userSelections);
+}
+//1 true value
+else if (numbers) {
+  userSelections = num;
+  console.log(userSelections);
+}
+else if (upper) {
+  userSelections = caps;
+  console.log(userSelections);
+}
+else if (spChar) {
+  userSelections = special;
+  console.log(userSelections);
+}
+else if (lower) {
+  userSelections = alpha;
+  console.log(userSelections);
+};
 
 
   return ("Your password here!")
@@ -66,9 +122,6 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-
-//if no answer
-//4 true choices
 //3 true choices
 //2 true choices
 //1 true choice
