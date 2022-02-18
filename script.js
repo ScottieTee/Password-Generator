@@ -19,6 +19,7 @@ const numbers = confirm('Do you want numbers?')
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+var userSelections;
 
 // Write password to the #password input
 function writePassword() {
@@ -41,5 +42,10 @@ generateBtn.addEventListener("click", writePassword);
 //1 true choice
 
 //create a loop for random password
+for (var i = 0; i< len; i++) {
+  var chosen = userSelections[Math.floor(Math.random() * userSelections.length)];
+  temp.push(chosen);
+  console.log(chosen);
+}
 
 //provide the password
