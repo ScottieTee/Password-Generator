@@ -6,14 +6,16 @@ let len = 0;
 //empty password variable
 let temp = '';
 
-len= prompt('How long would you like your password to be? (8-128)');
+
+function generatePassword () {
+  console.log ("CLICK ACCEPTED!")
+  len= prompt('How long would you like your password to be? (8-128)');
 const caps = confirm('Do you want caps?')
 const lower = confirm('Do you want lowercase?')
 const spChar = confirm('Do you want special characters?')
 const numbers = confirm('Do you want numbers?')
 
-function generatePassword () {
-  console.log ("CLICK ACCEPTED!")
+  return ("Your password here!")
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
