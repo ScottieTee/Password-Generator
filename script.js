@@ -8,6 +8,16 @@ let len = 0;
 //empty password variable
 let temp = '';
 
+var lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+// Var To Upper Case ------------
+var blankUpper = [];
+var toUpper = function (x) {
+  return x.toUpperCase();
+};
+caps = lower.map(toUpper);
+//--------------------------------------
+var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+var spChar = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
 //Start function
 function generatePassword () {
   //Prompt user input
@@ -121,10 +131,6 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-//3 true choices
-//2 true choices
-//1 true choice
 
 //create a loop for random password
 for (var i = 0; i< len; i++) {
