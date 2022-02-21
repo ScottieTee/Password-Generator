@@ -5,6 +5,17 @@ const upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 const num = '1234567890';
 const special = '!@#$%^&*?~_-'
 let len = 0;
+//arrays
+//var allInput = alpha + upper + num + special;
+//var randomPass = Array(len);
+//randomPass[0]= alpha;
+//randomPass[1]= upper;
+//randomPass[2]= num;
+///randomPass[3]= special;
+//randomPass = randomPass.fill(allInput, 4);
+// this isnt workingreturn shuffleArray(randomPass.map(function(x) { return x[Math.floor(Math.random() * x.length)] })).join('');
+
+
 //empty password variable
 let temp = '';
 
